@@ -42,3 +42,14 @@ This control law attempts to satisfy desired position trajectories as well as de
 |                            Desired & True Position Plot                        |                            Desired and True Force Plot                          |
 |:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
 |<img src="figures/parrallelMotionForceControl_JointPositionPlot.PNG" width="500" height="400">   | <img src="figures/parrallelMotionForceControl_ForcePlot.PNG" width="500" height="400">   |
+
+## Hybrid Force Motion Control
+Unlike parelle force motion control, this algorithm is intended to be used when both requirements (position & force) can be meet. This can lead to unstable performance when both requirements conflict with each other because the position and force parts of the algorithm will "compete with each other". Adding a damping term to the force control part, where damping is with respect to the rate of change of task space forces. Animations of the two senarios can be seen below. Further below, plots showing the force tracking can be seen. It should be noted that because there is no integral term in this control law, the desired forces & trajectories are not guaranted to be satisfied, rather the system will often settle in some equilibrium state being "pulled" equally as hard in oppositie directions towards two different states that satisfy force or trajectory requirements respectively.
+
+|                            Oscillating Force/Motion Control                    |                            Force/Motion Control with Damping Term               |
+|:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+|<img src="animations/hybridForceMotionUnstable.gif" width="400" height="500">   | <img src="animations/hybridForceMotionStable.gif" width="400" height="500">     |
+
+
+|:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+|<img src="figures/parrallelMotionForceControl_JointPositionPlot.PNG" width="500" height="400">   | <img src="figures/parrallelMotionForceControl_ForcePlot.PNG" width="500" height="400">   |
