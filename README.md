@@ -39,4 +39,4 @@ This control law attempts to satisfy desired position trajectories as well as de
 
 |                            Desired & True Position Plot                        |                            Desired and True Force Plot                          |
 |:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
-|<img src="animations/robustControlWithinLimits.gif" width="400" height="500">   | <img src="animations/robustControlExceedLimits.gif" width="400" height="500">   |
+|<img src="figures/parellelMotionForceContact_JointPositionPlot.PNG" width="400" height="500">   | <img src="figures/parellelMotionForceContact_ForcePlot.PNG" width="400" height="500">   |
