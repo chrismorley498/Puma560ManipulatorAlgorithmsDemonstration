@@ -51,5 +51,6 @@ Unlike parelle force motion control, this algorithm is intended to be used when 
 |<img src="animations/hybridForceMotionUnstable.gif" width="400" height="500">   | <img src="animations/hybridForceMotionStable.gif" width="400" height="500">     |
 
 
+|                            Oscillating Force/Motion Control                    |                            Force/Motion Control with Damping Term               |
 |:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
-|<img src="figures/parrallelMotionForceControl_JointPositionPlot.PNG" width="500" height="400">   | <img src="figures/parrallelMotionForceControl_ForcePlot.PNG" width="500" height="400">   |
+|<img src="figures/hybridControl_ForcePlot1.PNG" width="500" height="400">   | <img src="figures/hybridControl_ForcePlot2.PNG" width="500" height="400">   |
