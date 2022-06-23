@@ -34,7 +34,7 @@ The animation below shows the manipulator handling contact with a moving wall wh
 
 <img src="animations/impedanceControlMovingWall.gif" width="400" height="500"> 
 
-## Parrellel Force Motion Control
+## Parellel Force Motion Control
 This control law attempts to satisfy desired position trajectories as well as desired contact forces at the end effector. The contribution force control to joint inputs is calculated as the solution to a differential equation (DE) described in the project write up. This DE is implemented as a filter which contains an integrator. As a result, the manipulator will favour following the desired contact force profiles over the desired position trajectories when the two conflict with one another. An animation below shows the algorithm in action. Below the animation there are two plots which demonstrate how meeting force requirements take priorety. 
 
 <img src="animations/parellelForceMotionControl.gif" width="400" height="500"> 
