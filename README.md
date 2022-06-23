@@ -14,4 +14,4 @@ The control law uses the estimated model parameters to implement sliding mode co
 
 There are parameters which can be tuned to find optimal performance. For example the adaptation rate can be adjusted. To small a rate and the adaptation will not be fast enough to ensure tracking of the desired trajectory. To high a rate may cause numerical issues in simulation and more importantly may results in the controller demanding greater torque or a higher switching frequency than a real system can offer. The effect of the adaptation rate can be seen below.
 
-![](animations/adaptiveControlFastAdaptRate.gif)
+![Sufficient Update Rate](animations/adaptiveControlFastAdaptRate.gif)
