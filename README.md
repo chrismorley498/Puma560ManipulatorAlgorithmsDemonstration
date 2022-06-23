@@ -29,4 +29,14 @@ This algorithm also uses sliding mode control in the same way as sliding adaptiv
 
 ## Impedance Control
 The animation below shows the manipulator handling contact with a moving wall while an impedance controller is operating. This impedance control law is one where force measurements are not needed an as a result the desired inertia matrix of the system cannot be specified. This controller is operating in task space as interacting with objects that are described easiest in task space coordinates.
+
 <img src="animations/impedanceControlMovingWall.gif" width="400" height="500"> 
+
+## Parrellel Force Motion Control
+This control law attempts to satisfy desired position trajectories as well as desired contact forces at the end effector. The contribution force control to joint inputs is calculated as the solution to a differential equation (DE) described in the project write up. This DE is implemented as a filter which contains an integrator. As a result, the manipulator will favour following the desired contact force profiles over the desired position trajectories when the two conflict with one another. An animation below shows the algorithm in action. Below the animation there are two plots which demonstrate how meeting force requirements take priorety. 
+
+<img src="animations/parellelForceMotionControl.gif" width="400" height="500"> 
+
+|                            Desired & True Position Plot                        |                            Desired and True Force Plot                          |
+|:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+|<img src="animations/robustControlWithinLimits.gif" width="400" height="500">   | <img src="animations/robustControlExceedLimits.gif" width="400" height="500">   |
