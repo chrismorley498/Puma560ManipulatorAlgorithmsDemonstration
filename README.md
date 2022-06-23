@@ -16,7 +16,7 @@ There are parameters which can be tuned to find optimal performance. For example
 
 
 
-<img src="animations/adaptiveControlFastAdaptRate.gif" width="400" height="600"> <img src="animations/adaptiveControlSlowAdaptRate.gif" width="400" height="600">
+<img src="animations/adaptiveControlFastAdaptRate.gif" width="400" height="500"> <img src="animations/adaptiveControlSlowAdaptRate.gif" width="400" height="500">
 
 
 ![](animations/adaptiveControlFastAdaptRate.gif) ![](animations/adaptiveControlSlowAdaptRate.gif)
