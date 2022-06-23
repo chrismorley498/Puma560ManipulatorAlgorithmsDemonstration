@@ -27,3 +27,6 @@ This algorithm also uses sliding mode control in the same way as sliding adaptiv
 |:------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
 |<img src="animations/robustControlWithinLimits.gif" width="400" height="500">   | <img src="animations/robustControlExceedLimits.gif" width="400" height="500">   |
 
+## Impedance Control
+The animation below shows the manipulator handling contact with a moving wall while an impedance controller is operating. This impedance control law is one where force measurements are not needed an as a result the desired inertia matrix of the system cannot be specified. This controller is operating in task space as interacting with objects that are described easiest in task space coordinates.
+<img src="animations/impedanceControlMovingWall.gif" width="400" height="500"> 
