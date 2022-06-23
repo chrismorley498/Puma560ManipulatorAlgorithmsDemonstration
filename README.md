@@ -1,6 +1,6 @@
 # Puma560ManipulatorAlgorithmsDemonstration
 This repo contains a Simulink (Simscape) model and supporting MATLAB scripts to analyse how different non-linear control methods can be used to control the PUMA 560.
-There are both force and position control algorithms. Force control algorithms, when run, demonstrate the manipulator's ability to interact with the environment in a stable manor. 
+There are both force and position control algorithms. Make sure to run the entire InitializationScript.m before running the model and then to run the appropriate section to setup the corret environment depending on which control law you use. The active control law can be selected by using the drop down list in the Simulink model.
 
 A description of some of the most notable algorithms can be found below.
 
