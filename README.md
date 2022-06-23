@@ -1,5 +1,5 @@
 # Puma560ManipulatorAlgorithmsDemonstration
-This repo contains a Simulink model and supporting MATLAB scripts to analyse how different non-linear control methods can be used to control the PUMA 560.
+This repo contains a Simulink (Simscape) model and supporting MATLAB scripts to analyse how different non-linear control methods can be used to control the PUMA 560.
 There are both force and position control algorithms. Force control algorithms, when run, demonstrate the manipulator's ability to interact with the environment in a stable manor. 
 
 A description of some of the most notable algorithms can be found below.
@@ -12,6 +12,6 @@ This algorithm is made up of two parts. Namely the adaptive law and the control 
 
 The control law uses the estimated model parameters to implement sliding mode control. The sliding surface is a hyperplane defined by the sum of joint positions and velocity errors. The derivative of the sliding surface contains the control input, joint torque, so the state of the system successfully converges to the sliding surface during the reaching phase of the control. Once the state of the system is on the hyperplane, the sliding mode controller will ensure the state does not leave the hyperplane. While on the hyperplane, the state will follow the dynamics described by the sliding surface equation when the equation is set equal to zero.
 
-There are parameters which can be tuned to find optimal performance. For example the adaptation rate can be adjusted. To small a rate and the adaptation will not be fast enough to ensure tracking of the desired trajectory. To high a rate may cause numerical issues in simulation and more importantly may results in the controller demanding greater torque or a higher switching frequency than a real system can offer. The effect of the adaptation rate can be seen below.
+There are parameters which can be tuned to find optimal performance. For example the adaptation rate can be adjusted. To small a rate and the adaptation will not be fast enough to ensure tracking of the desired trajectory. To high a rate may cause numerical issues in simulation and more importantly may results in the controller demanding greater torque or a higher switching frequency than a real system can offer. The effect of the adaptation rate can be seen in the animations below. The green spline is the desired trajectory of the end effector and the yellow one is the trajectory of the end effectors true position.
 
-![Sufficient Update Rate](animations/adaptiveControlFastAdaptRate.gif)
+![](animations/adaptiveControlFastAdaptRate.gif) ![](animations/adaptiveControlSlowAdaptRate.gif)
